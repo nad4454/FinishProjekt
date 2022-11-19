@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_posts">
+
+    <fragment
+        android:id="@+id/navigation_posts"
+        android:name="com.example.mfinishprojekt.ui.posts.PostsFragment"
+        android:label="@string/posts"
+        tools:layout="@layout/fragment_posts" />
+
+    <fragment
+        android:id="@+id/navigation_albums"
+        android:icon="@drawable/ic_baseline_photo_album_24"
+        android:name="com.example.mfinishprojekt.ui.albums.AlbumsFragment"
+        android:label="@string/albums"
+        tools:layout="@layout/fragment_albums" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:name="com.example.mfinishprojekt.ui.account.AccountFragment"
+        android:label="@string/account"
+        tools:layout="@layout/fragment_account" />
+</navigation>
